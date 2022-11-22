@@ -7,7 +7,7 @@ import { ReactComponent as Medium }from '../../img/medium_icon.svg'
 import { ReactComponent as Linkedin } from '../../img/linkedin_icon.svg'
 import { ReactComponent as Discord } from '../../img/discord_icon.svg'
 
-function Welcome() {
+function Welcome({setActivePage}) {
   return (
     <div className='welcome'>
         <div className='welcome_wrapper'>
@@ -19,19 +19,19 @@ function Welcome() {
                     <p className='welcome_title'>a living fantasy world created by players - a world that will go from a mobile game to the most free-to-play PC MMO RPG in history.</p>
                     <div className='btn'>
                         <a className='btn_join_discord'>Join Discord</a>
-                        <a className='btn_collaborate'>Collaborate</a>
+                        <a onClick={()=>setActivePage('collaborate')} className='btn_collaborate'>Collaborate</a>
                     </div>
                     <div className='socials'>
-                        <a>
+                        <a href='https://twitter.com/playgamefabula'>
                             <Twitter/>
                         </a>
-                        <a >
+                        <a href='https://medium.com/@playgamefabula'>
                             <Medium/>
                         </a>
-                        <a>
+                        <a href='https://www.linkedin.com/company/playfabula/'>
                             <Linkedin />
                         </a>
-                        <a>
+                        <a href='https://discord.gg/eqxMAGpT'>
                             <Discord/>
                         </a>
                     </div>

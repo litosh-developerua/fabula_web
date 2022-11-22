@@ -8,19 +8,28 @@ import Heroes from './6_Heroes/Heroes'
 import Community from './7_Community/Community'
 import Feedback from './8_Feedback/Feedback'
 import FooterBlock from './9_Footer/FooterBlock'
+import './Home.css'
 
 
-function Home() {
+function Home({setActivePage}) {
   return (
     <>
-     <Welcome/>
+     <Welcome setActivePage={setActivePage}/>
+     <hr/>
      <Map/>
+     <hr/>
      <History/>
+     <hr/>
     <GameDesignDeck/>
+    <hr/>
     <Workspace/>
+    <hr/>
     <Heroes/>
+    <hr/>
     <Community/>
+    <hr/>
     <Feedback/>
+    <hr/>
     <FooterBlock/>
     </>
   )

@@ -13,10 +13,22 @@ return (
                 <div className='container'>
                     <div className='footer_content'>
                         <div className="icons_footer">
-                            <img src={Twitter} alt="" />
-                            <img src={Patreon} alt="" />
-                            <img src={Linkedin} alt="" />
-                            <img src={Discord} alt="" />
+                            <a href='https://twitter.com/playgamefabula'>
+                                <img src={Twitter} alt="" />
+                            </a>
+                            <a href='https://medium.com/@playgamefabula'>
+                                <img src={Patreon} alt="" />   
+                            </a>
+                            <a href='https://www.linkedin.com/company/playfabula/'>
+                              <img src={Linkedin} alt="" />  
+                            </a>
+                            <a href='https://discord.gg/eqxMAGpT'>
+                                <img src={Discord} alt="" />
+                            </a>
+                            
+                            
+                            
+                            
                         </div>
                         <div className="links_footer">
                             <a href="#">COMMUNITY</a>
